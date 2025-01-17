@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Login Page</title>
+        <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    </head>
+
+    <style>
+        #signup{
+            display: none;
+        }
+    </style>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCUNz4G0i-H63ukOOlTgcSAmYVh-yCEWEw",
+            authDomain: "dayacob-music.firebaseapp.com",
+            projectId: "dayacob-music",
+            storageBucket: "dayacob-music.firebasestorage.app",
+            messagingSenderId: "754686380975",
+            appId: "1:754686380975:web:c0743c7f1e26f12c5e7d5a",
+            measurementId: "G-V932XV9BRQ"
+        }
+
+        firebase.initializeApp(firebaseConfig)
+
+        function checkAuthState(){
+            firebase.auth().onAuthStateChanged(function(user) {
+                if (user){
+                    window.location.href = "./index.html"
+                }
+            })
+        }
+
+        function isValidPassword(email, password){
+            if (password === email){
+                return {valid: false, message: "Password cannot be the same as your email."}
+            }
+            if (password.length <= 6){
+                return {valid: false, message: "Password must be at least 7 characters."}
+            }
+            const hasUppercase = /[A-Z]/.test(password)
+            if (!hasUppercase){
+                return {valid: false, message: "Password must contain at least one uppercase letter."}
+            }
+            const hasNumber = /\d/.test(password)
+            if (!hasNumber){
+                return {valid: false, message: "Password must contain at least one number."}
+            }
+            return {valid: true}
+        }
+
+        function login(){
+            var email = document.getElementById("login-email").value
+            var password = document.getElementById("login-password").value
+            //Gets the email and password from the ids.
+
+            var emailInfo = document.getElementById("login-email-info")
+            var passwordInfo = document.getElementById("login-password-info")
+
+            emailInfo.innerHTML = ""
+            passwordInfo.innerHTML = ""
+
+            firebase.auth().signInWithEmailAndPassword(email, password)
+            .then(function(){
+                window.location.href = "./index.html"
+                //Switches window to the main page if successfully signed in.
+            })
+            .catch(function(error) {
+                if (error.code === "auth/user-not-found"){
+                    emailInfo.innerHTML = "Email is not found."
+                } else if (error.code === "auth/wrong-password"){
+                    passwordInfo.innerHTML = "Password is incorrect."
+                } else if (error.code === "auth/invalid-email"){
+                    emailInfo.innerHTML = "Email is invalid."
+                } else {
+                    console.error("Error during login: ", error.code)
+                }
+            })
+        }
+
+        function signup(){
+            var email = document.getElementById("signup-email").value
+            var password = document.getElementById("signup-password").value
+            //Gets the email and password from the ids.
+
+            var emailInfo = document.getElementById("signup-email-info")
+            var passwordInfo = document.getElementById("signup-password-info")
+
+            emailInfo.innerHTML = ""
+            passwordInfo.innerHTML = ""
+            const validation = isValidPassword(email, password)
+            if (!validation.valid){
+                passwordInfo.innerHTML = validation.message
+            } else {
+                firebase.auth().createUserWithEmailAndPassword(email, password)
+                .then(function(){
+                    window.location.href = "./index.html"
+                    //Switches window to the main page if successfully signed in.
+                })
+                .catch(function(error) {
+                    if (error.code === "auth/invalid-email"){
+                        emailInfo.innerHTML = "Email is invalid."
+                    } else if (error.code === "auth/email-already-in-use"){
+                        emailInfo.innerHTML = "Email is already in use."
+                    } else {
+                        console.error("Error during signup: ", error.code)
+                    }
+                })
+            }
+        }
+
+        function changeMethod(){
+            var login = document.getElementById("login").style
+            var signup = document.getElementById("signup").style
+
+            if (signup.display == "none" || signup.display == ""){
+                signup.display = "block"
+                login.display = "none"
+            } else if (login.display == "none" || signup.display == ""){
+                signup.display = "none"
+                login.display = "block"
+            }
+        }
+
+    </script>
+    <body onload="checkAuthState()">
+        <form id="login">
+            <h1> Login </h1>
+            <p id="login-email-info"></p>
+            <label> Email: </label>
+            <input type="email" id="login-email"><br><br>
+            <p id="login-password-info"></p>
+            <label> Password: </label>
+            <input type="password" id="login-password"><br><br>
+            <button type="button" onclick="login()">Login</button><br><br>
+            <button type="button" onclick="changeMethod()"> Don't have an account? Create one here! </button>
+        </form>
+
+        <form id="signup">
+            <h1> Signup </h1>
+            <p id="signup-email-info"></p>
+            <label> Email: </label>
+            <input type="email" id="signup-email"><br><br>
+            <p id="signup-password-info"></p>
+            <label> Password: </label>
+            <input type="password" id="signup-password"><br><br>
+            <button type="button" onclick="signup()">Signup</button><br><br>
+            <button type="button" onclick="changeMethod()"> Already have an account? Login here! </button>
+        </form>
+    </body>
+</html>

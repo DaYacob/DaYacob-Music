@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Project</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-16">
+
+        <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    </head>
+
+    <body>
+        <div id="library">
+            <!-- Creates a library division, initially this will be empty, but albums will be created when liked -->
+        </div>
+
+        <div id="player">
+            <div id="left">
+                <img id="song-image">
+                <div id="music">
+                    <p id="song-name">Song Name</h1>
+                    <p id="song-feature">Song Features</p>
+                </div>
+            </div>
+
+            <div id="centre">
+                <div id="controls">
+                    <img onclick="enableShuffle()" src="./Images/Icons/Shuffle.png" id="shuffle">
+                    <img onclick="rewindCurrentSong()" src="./Images/Icons/Rewind.png" id="rewind">
+                    <img onclick="updateSongState()" src="./Images/Icons/Play.png" id="song-state">
+                    <img onclick="skipCurrentSong()" src="./Images/Icons/Skip.png" id="skip">
+                    <img onclick="enableRepeat()" src="./Images/Icons/Repeat.png" id="repeat">
+                </div>
+                <input type="range" id="progress" min="0" max="1000" value="0">
+            </div>
+
+            <div id="right">
+                <div id="controls">
+                    <img src="./Images/Icons/Volume.png">
+                    <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+                </div>
+            </div>
+        </div>
+
+        <div id="container">
+            <div id="top"> 
+                <input id="search-bar" placeholder="What do you want to play?" spellcheck = "false">
+                <!-- Creates a search bar -->
+                <button type="button" onclick="signout()">Signout</button><br><br>
+                <!-- Creates a signout button-->
+            </div>
+            <div id="searching">
+            </div>
+            <br>
+            <div id="title">
+                <img id="album-image" src="">
+                <div id="info">
+                    <h1 id="album-name">Album Name</h1>
+                    <h1 id="album-desc">Album Description</h1>
+                    <img id="save" onclick="modifyLibrary()" src="./Images/Icons/Save.png">
+                </div>
+                <!-- Creates the title for the album, containing the image, name, artist and the year -->
+            </div>
+            <ol id="songs" type="1">
+                <!-- Creates a list for songs, this is initially empty, but songs will be created when selecting albums -->
+            </ol>
+            <br>
+        </div>
+        <script src="./code.js"></script>
+    </body>
+</html>
