@@ -110,7 +110,34 @@ let all = [
         ["https://dl.dropbox.com/scl/fi/ux2ugc8vv0iaehtqfqkv0/Kanye-West.mp3?rlkey=a2rorum0jmymjckzp7i3bgtte&st=oua4a8tk&dl=0", "", "Kanye West", "Young Thug, Wyclef Jean"],
         ["https://dl.dropbox.com/scl/fi/19q8tq0vxrvl9z7dtndks/Pick-Up-The-Phone.mp3?rlkey=4ql3f50ymh0o0dli3nxq9cpos&st=pc6vj8n8&dl=0", "", "Pick Up The Phone", "Young Thug, Travis Scott, Quavo"],
     ],
-
+    [
+        ["Grave House", "Sematary, Ghost Mountain", "2019", "Album", "./Images/Albums/Grave House.png", "rgb(122, 5, 17)"],
+        ["https://dl.dropbox.com/scl/fi/dwyg3f0wjf0kgjsye5mcg/Fury-Road.mp3?rlkey=hfp2twp2scmj293f6qwmo7au7&st=f35c8vx8&dl=0", "", "Fury Road", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/o8lpylk2r8vnwy1sukdbf/Nevada.mp3?rlkey=d56vgw0uv9dt6zmp9j37p9ieh&st=ru2esfl2&dl=0", "", "Nevada", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/v0t65fldwsjfdzxsi5yzs/Interstate.mp3?rlkey=wd4szjgzsmrech8abkc8xrk6s&st=q1qqutao&dl=0", "", "Interstate", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/k8mt8rrhgxi0d5q4imyca/New-Rocks.mp3?rlkey=f57fsgne31sjdkd818lpa5y41&st=x1anrfke&dl=0", "", "New Rocks", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/v42olp30rnqghcmrgn7m0/Goat-Man.mp3?rlkey=pt1g6xy9xv02nzut91ujqp6ch&st=7inws5ug&dl=0", "", "Goat Man", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/4ehrjnz4w637j5l3jcz2a/Orbs.mp3?rlkey=9dviw5hsdy65x0pnw2coxmvbw&st=x6824zly&dl=0", "", "Orbs", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/1ahsvv2o3caoaqpj9lm6p/Skin-Mask.mp3?rlkey=e2g9bywt60opvb1ciy7bvyzp4&st=x26rv4pc&dl=0", "", "Skin Mask", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/wvqlrnr2iwdt22flwq9cn/Dead-By-Dawn.mp3?rlkey=l0iwbc81390tllovdrw3f5ufc&st=n1b1jdw4&dl=0", "", "Dead By Dawn", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/7fdne69wz6aqr1qzthl3w/Fury-Road-2.mp3?rlkey=chhqiamjqjzoxssvczbi6c25w&st=gyy9jkkz&dl=0", "", "Fury Road 2", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/8yzwwru44see25zoaqnzb/Ready-For-The-House.mp3?rlkey=hj6kp3olb3joqgwd47o8b7q1j&st=lcmm8add&dl=0", "", "Ready For The House", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/4x9buvyn3tzzc90ypem8o/Stand-Your-Ground.mp3?rlkey=bvfpahc634yzpvu25lva4aams&st=tsdzs523&dl=0", "", "Stand Your Ground", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/6yys8amydmkz1g80eckaw/Broken-Angel-Hospital.mp3?rlkey=8rkflwimj9yi4mdngn13jvkre&st=ynmuuxb5&dl=0", "", "Broken Angel Hospital", "Sematary, Ghost Mountain"],
+    ],
+    [
+        ["Hundred Acre Wrist", "Sematary, Ghost Mountain", "2020", "Album", "./Images/Albums/Hundred Acre Wrist.png", "rgb(117, 153, 32)"],
+        ["https://dl.dropbox.com/scl/fi/w6nduxgk0gsrdarjwt6q7/Heffalumps.mp3?rlkey=a5sk3ewmafbte932xq1nh9j3m&st=zf0s0zwv&dl=0", "", "Heffalumps", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/rt0611861niumj6gayfh6/Louisville-Slugger.mp3?rlkey=c4emrc6usuhlj09jhcq4mhv8q&st=2jsjrfor&dl=0", "", "Louisville Slugger", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/zltlq9g401rowx5sbi3s9/Tourniquet.mp3?rlkey=6i80660vkbz1qhj2px0j1szxw&st=h6xeglbs&dl=0", "", "Tourniquet", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/gatm9bfkb1n6re0k67tba/Deer-God.mp3?rlkey=fbmghlqtnzqv9ene0owp30548&st=q4midf8r&dl=0", "", "Deer God", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/tu1hn8gg0gboltkdgo804/Taxidermy.mp3?rlkey=ql493pdx2fv9fut1buozbxvqk&st=gc6dczz2&dl=0", "", "Taxidermy", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/9npxt4chgdyobmg4dd47v/Sigil.mp3?rlkey=pa731n5gn60mvriqh9ldjpyke&st=07eeaj8y&dl=0", "", "Sigil", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/rp69ui7qnofps5ydeuiod/Johnny-Cutter.mp3?rlkey=z5npb98hy4zzgakqanrcfu98l&st=oe9y59nh&dl=0", "", "Johnny Cutter", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/zs4owhui3oi7ypj3rjoz9/Goodbye-Horses.mp3?rlkey=qp9wrl9y7b7v77zgywku2lu7h&st=zkz1kwgf&dl=0", "", "Goodbye Horses", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/lnrcom19hium48v8iina3/Nazgul.mp3?rlkey=nu5x32pyh6vyd303vr1ozm0o9&st=8mreyham&dl=0", "", "Nazgul", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/hl6othzvx7vn0mbor6t7m/Cleaver-Valley.mp3?rlkey=ztp9xrt9wkual75f4e0a72lab&st=vebyqmii&dl=0", "", "Cleaver Valley", "Sematary, Ghost Mountain"],
+    ],
     [
         ["Rainbow Bridge 3", "Sematary", "2021", "Album", "./Images/Albums/Rainbow Bridge 3.png", "rgb(189, 21, 21)"],
         ["https://dl.dropbox.com/scl/fi/0v6cczi7iqhk9t7zdbd70/God-s-Light-Burns-Upon-My-Flesh.mp3?rlkey=h031odnnirvxfldjsrp84i5ng&st=hgif3675&dl=0", "", "God's Light Burns Upon My Flesh", "Sematary"],
@@ -130,6 +157,10 @@ let all = [
         ["https://dl.dropbox.com/scl/fi/hrwzlo7bw1rymanonv9uv/Truey-Jeans.mp3?rlkey=1yjxo7fc5pym59itr23td4ifb&st=itkl4q8s&dl=0", "", "Truey Jeans", "Sematary"],
         ["https://dl.dropbox.com/scl/fi/zxdo15ri1gh2354p26s16/Crucifixion.mp3?rlkey=1iwkn6lis41cn2tt7pr7kw6sg&st=p78uhasa&dl=0", "", "Crucifixion", "Sematary"],
         
+    ],
+    [
+        ["Still Da Same", "Sematary, xaviersobased", "2025", "Single", "./Images/Albums/Still Da Same.png", "rgb(80, 59, 163)"],
+        ["https://dl.dropbox.com/scl/fi/xxjslxawyklhmromv1re4/Still-Da-Same.mp3?rlkey=12ueinicuxw798l2epho4airm&st=4jghs0q5&dl=0", "", "Still Da Same", "Sematary, xaviersobased"],
     ],
     [
         ["Working On Dying", "Bladee", "2017", "Album", "./Images/Albums/Working On Dying.png", "rgb(105, 31, 18)"],
@@ -271,6 +302,21 @@ function updateCurrentSongs(){
         songFeature.innerHTML = list[i][3]
         songContainer.appendChild(songFeature)
 
+        if (list == all[0]){
+            const songAlbum = document.createElement("p")
+            songAlbum.classList.add("song-album")
+
+            const album = findAlbum(false, songName.innerHTML)
+            songAlbum.innerHTML = album[0][0]
+            songContainer.appendChild(songAlbum)
+
+            songAlbum.addEventListener("click", function(event) {
+                event.stopPropagation()
+
+                findAlbum(true, songName.innerHTML)
+            })
+        }
+
         const createdLike = document.createElement("img")
         createdLike.classList.add("song-like")
         createdLike.src = "./Images/Icons/Save.png"
@@ -298,9 +344,12 @@ function updateCurrentSongs(){
                 added.push(albumImage.src)
                 all[0].push(added)
 
-                if (playing == all[0]){
-                    loadAudio(all[0])
+                if (playing = all[0]){
+                    const newAudio = new Audio(all[0][all[0].length - 1][0])
+                    newAudio.load()
+                    all[0][all[0].length - 1][1] = newAudio
                 }
+
             } else {
                 createdLike.src = "./Images/Icons/Save.png"
                 const removed = all[0].findIndex(row => row[0] == list[i][0])
@@ -476,6 +525,23 @@ function updateSongState(){
         } else if (!currentSong.paused) {
             currentSong.pause()
             songState.src = "./Images/Icons/Play.png"
+        }
+    }
+}
+
+function findAlbum(update, song){
+    //Update suggests if the album should be updated
+    //Song suggests what song name to find
+
+    for (let i = 1; i < all.length; i++){ //Starts at 1 so it ignores liked songs
+        for (let j = 0; j < all[i].length; j++){
+            if (all[i][j][2] == song){
+                if (update){
+                    updateCurrentAlbum(i)
+                } else {
+                    return all[i]
+                }
+            }
         }
     }
 }
