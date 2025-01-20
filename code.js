@@ -274,7 +274,7 @@ function updateCurrentSongs(){
 
     title.style.background = `linear-gradient(to bottom, ${list[0][5]}, rgb(40, 40, 40))`
 
-    if (playing == list){
+    if (playing == list && !isNaN(currentSong)){
         albumName.style.color = "rgb(36, 156, 68)"
     } else {
         albumName.style.color = "rgb(255, 255, 255)"
