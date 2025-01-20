@@ -62,10 +62,10 @@ checkAuthState()
 
 let all = [
     [
-        ["Liked Songs", "DaYacob Music", "0 Songs", "Playlist", "./Images/Albums/Liked.png"],
+        ["Liked Songs", "DaYacob Music", "0 Songs", "Playlist", "./Images/Albums/Liked.png", "rgb(89, 61, 191)"],
     ],
     [
-        ["Slime Season 2", "Young Thug", "2015", "Album", "./Images/Albums/Slime Season 2.png"],
+        ["Slime Season 2", "Young Thug", "2015", "Album", "./Images/Albums/Slime Season 2.png", "rgb(64, 5, 5)"],
         ["https://dl.dropbox.com/scl/fi/qipn7dip79mgpvmqmq0tp/Big-Racks.mp3?rlkey=94ehurehk5t8y6f7251crld7n&st=cdwjpugw&dl=0", "", "Big Racks", "Young Thug, Lil Uzi Vert"],
         ["https://dl.dropbox.com/scl/fi/6sbo2jhttq8sgp9akpjsa/Thief-In-The-Night.mp3?rlkey=ixbfoc6impant2jqqp3fyl1nq&st=blotazi8&dl=0", "", "Thief In The Night", "Young Thug, Trouble"],
         ["https://dl.dropbox.com/scl/fi/ynmzgobpubwbwksrxb4gl/Don-t-Know.mp3?rlkey=4o77givrmgyze51dckpaurx3y&st=2enayzw8&dl=0", "", "Don't Know", "Young Thug, Shad Da God"],
@@ -90,11 +90,15 @@ let all = [
         ["https://dl.dropbox.com/scl/fi/gr2ubndnwyfwjipyeddnn/Love-Me-Forever-Chopped-Screwed.mp3?rlkey=4af7h9dr9f5ejv7lugzsdwj79&st=lpbbk059&dl=0", "", "Love Me Forever (Chopped & Screwed)", "Young Thug"],
     ],
     [
-        ["The Whole World Is Free", "OsamaSon", "2024", "Single", "./Images/Albums/The Whole World Is Free.png"],
+        ["The Whole World Is Free", "OsamaSon", "2024", "Single", "./Images/Albums/The Whole World Is Free.png", "rgb(209, 51, 33)"],
         ["https://dl.dropbox.com/scl/fi/z7zuxmqoscq4eyna5vgwx/The-Whole-World-Is-Free.mp3?rlkey=7p3dc93azp0e3i03mnf01b643&st=w9chjuip&dl=0", "", "The Whole World Is Free", "OsamaSon"],
     ],
     [
-        ["Jeffery", "Young Thug", "2016", "Album", "./Images/Albums/Jeffery.png"],
+        ["nothing like uuu", "Nettspend", "2024", "Single", "./Images/Albums/nothing like uuu.png", "rgb(50, 54, 66)"],
+        ["https://dl.dropbox.com/scl/fi/guldh4jnuxcmbfb4rhgff/nothing-like-uuu.mp3?rlkey=i4gknb05i75jy8g6upj96umhz&st=kjkzgx66&dl=0", "", "nothing like uuu", "Nettspend"],
+    ],
+    [
+        ["Jeffery", "Young Thug", "2016", "Album", "./Images/Albums/Jeffery.png", "rgb(111, 122, 171)"],
         ["https://dl.dropbox.com/scl/fi/nsv9ottqpserjlaj8qqst/Wyclef-Jean.mp3?rlkey=1zenpygfpnx7mwlb13b07f82n&st=29hv52k2&dl=0", "", "Wyclef Jean", "Young Thug"],
         ["https://dl.dropbox.com/scl/fi/ktdmlx32039l83uquyvan/Floyd-Mayweather.mp3?rlkey=yao7ha1p1zn7ovyhev2i5p9hl&st=h9kzqrvt&dl=0", "", "Floyd Mayweather", "Young Thug, Travis Scott, Gucci Mane, Gunna"],
         ["https://dl.dropbox.com/scl/fi/v9xm41yzaqc43502zxkxd/Swizz-Beatz.mp3?rlkey=0g07i5k1hal0mkxeucoiaf4gh&st=wxmzdami&dl=0", "", "Swizz Beatz", "Young Thug"],
@@ -105,6 +109,54 @@ let all = [
         ["https://dl.dropbox.com/scl/fi/opc2wfjq1s2ououdjt0xv/Webbie.mp3?rlkey=tkpuumq6yrgp6vwelb2c8tk0o&st=2m6rakfv&dl=0", "", "Webbie", "Young Thug, Lil Duke"],
         ["https://dl.dropbox.com/scl/fi/ux2ugc8vv0iaehtqfqkv0/Kanye-West.mp3?rlkey=a2rorum0jmymjckzp7i3bgtte&st=oua4a8tk&dl=0", "", "Kanye West", "Young Thug, Wyclef Jean"],
         ["https://dl.dropbox.com/scl/fi/19q8tq0vxrvl9z7dtndks/Pick-Up-The-Phone.mp3?rlkey=4ql3f50ymh0o0dli3nxq9cpos&st=pc6vj8n8&dl=0", "", "Pick Up The Phone", "Young Thug, Travis Scott, Quavo"],
+    ],
+
+    [
+        ["Rainbow Bridge 3", "Sematary", "2021", "Album", "./Images/Albums/Rainbow Bridge 3.png", "rgb(189, 21, 21)"],
+        ["https://dl.dropbox.com/scl/fi/0v6cczi7iqhk9t7zdbd70/God-s-Light-Burns-Upon-My-Flesh.mp3?rlkey=h031odnnirvxfldjsrp84i5ng&st=hgif3675&dl=0", "", "God's Light Burns Upon My Flesh", "Sematary"],
+        ["https://dl.dropbox.com/scl/fi/88s62udntkzwtzqd5hxhj/Murder-Ride.mp3?rlkey=894204zn6vmvxmtyvfh24bpew&st=xzy6wjiw&dl=0", "", "Murder Ride", "Sematary"],
+        ["https://dl.dropbox.com/scl/fi/qbgiu6avv5nyswjppwqk9/Chainsaw-Party.mp3?rlkey=r2ch1tqcl4neb2dj5ojgy7hhp&st=7zkquytc&dl=0", "", "Chainsaw Party", "Sematary"],
+        ["https://dl.dropbox.com/scl/fi/0pgrls0vhgp5w58ohvf0m/I-m-A-Sinner.mp3?rlkey=j6ir5l3q8ojvaymgbsn65x2iy&st=zig4l5i1&dl=0", "", "I'm A Sinner", "Sematary"],
+        ["https://dl.dropbox.com/scl/fi/pgqi44cg06i24x7aczz8w/Skin-Mask-2.mp3?rlkey=4ffqj12iyonp5muojobl6udsa&st=sj8smvoy&dl=0", "", "Skin Mask 2", "Sematary"],
+        ["https://dl.dropbox.com/scl/fi/g0140qyta28x52gm9bup5/Necromanser.mp3?rlkey=nn699q463hfcyuussu4k021wy&st=5k7frgpk&dl=0", "", "Necromanser", "Sematary"],
+        ["https://dl.dropbox.com/scl/fi/kvuzf5hx35vvu29aybgwy/Forest-Fire.mp3?rlkey=kajiqx14pwas4t3syusxzc4re&st=3x7wdr4b&dl=0", "", "Forest Fire", "Sematary, Buckshot"],
+        ["https://dl.dropbox.com/scl/fi/weanhjtyg6qxq7oswhdaj/Creepin-Thru-Da-Woods.mp3?rlkey=kolz7f23gkj6i61oq8ye5bw00&st=kkeo3rw5&dl=0", "", "Creepin' Thru Da Woods", "Sematary"],
+        ["https://dl.dropbox.com/scl/fi/z54w4xzsd0bnyh1yyumg4/Toothtaker.mp3?rlkey=1wmk2io80rmb2n03uhrzynm3f&st=yuyzmlhc&dl=0", "", "Toothtaker", "Sematary"],
+        ["https://dl.dropbox.com/scl/fi/530a7xr6ez06vz8f9ueby/Come-With-Me-To-Hell.mp3?rlkey=6wrwcwe0iu5oltypz03c8cwds&st=wosifbin&dl=0", "", "Come With Me To Hell", "Sematary"],
+        ["https://dl.dropbox.com/scl/fi/3r50qbnhwi5bvfaz97bne/Goin-Mordum.mp3?rlkey=hwc3i8wwt38ja5yvaojou0tpm&st=y8alyemr&dl=0", "", "Goin' Mordum", "Sematary, Ghost Mountain"],
+        ["https://dl.dropbox.com/scl/fi/k5w8nujgu96j9wagnwox6/Witching-Hour.mp3?rlkey=wj88ql697d7p1nbts1zv5fh4p&st=qriljemu&dl=0", "", "Witching Hour", "Sematary"],
+        ["https://dl.dropbox.com/scl/fi/ozin1fxdi76g2ikatjvfj/Skincarver.mp3?rlkey=m499zsz24q4aq40ijmh4hu62f&st=qalvvvls&dl=0", "", "Skincarver", "Sematary"],
+        ["https://dl.dropbox.com/scl/fi/7l9skaj79oekbcfwxrff1/Meet-By-The-River.mp3?rlkey=oc5bi8mdpc2rzbjk25kj9w1id&st=y3c2mph2&dl=0", "", "Meet Me By The River", "Sematary"],
+        ["https://dl.dropbox.com/scl/fi/hrwzlo7bw1rymanonv9uv/Truey-Jeans.mp3?rlkey=1yjxo7fc5pym59itr23td4ifb&st=itkl4q8s&dl=0", "", "Truey Jeans", "Sematary"],
+        ["https://dl.dropbox.com/scl/fi/zxdo15ri1gh2354p26s16/Crucifixion.mp3?rlkey=1iwkn6lis41cn2tt7pr7kw6sg&st=p78uhasa&dl=0", "", "Crucifixion", "Sematary"],
+        
+    ],
+    [
+        ["Working On Dying", "Bladee", "2017", "Album", "./Images/Albums/Working On Dying.png", "rgb(105, 31, 18)"],
+        ["https://dl.dropbox.com/scl/fi/f0fhant40rk955y8zo02c/Redlight-Moments.mp3?rlkey=rnm9tf0gpdleqxdu247qftrpp&st=plbndcm5&dl=0", "", "Redlight Moments", "Bladee"],
+        ["https://dl.dropbox.com/scl/fi/civc57qwttr5g8hrtqjh3/Lordship.mp3?rlkey=guapyq6lfniwfxnsfx087tm4d&st=cxbc0ktp&dl=0", "", "Lordship", "Bladee"],
+        ["https://dl.dropbox.com/scl/fi/7hqy7kgg2v6lq4cknlev9/Knightsbridge.mp3?rlkey=a7uiffpzky5gdsyew94u59bzr&st=chto2cmj&dl=0", "", "Knightsbridge", "Bladee"],
+        ["https://dl.dropbox.com/scl/fi/xk293ud6cmn395qnwzs8l/Backstr-t-Boys.mp3?rlkey=qltr6d07m2gor4sjma85rzimb&st=yb079iur&dl=0", "", "Backstr€€t Boys", "Bladee, Black Kray"],
+        ["https://dl.dropbox.com/scl/fi/wvskmlgz1bthqm3i1kory/Under-Your-Spell.mp3?rlkey=wtekjjqvou55cg0a343pjmjup&st=abgowcgt&dl=0", "", "Under Your Spell", "Bladee"],
+        ["https://dl.dropbox.com/scl/fi/8qaoegrjsoj3k9vth7b1b/D-925.mp3?rlkey=r5149e2fjaof1sxtpzxbesias&st=gn8db5si&dl=0", "", "D-925", "Bladee"],
+        ["https://dl.dropbox.com/scl/fi/3grxwq33vn9glx4jschmc/Gatekeeper.mp3?rlkey=u5lm1jzwnvdwls1v28z28h8st&st=79l5jmg1&dl=0", "", "Gatekeeper", "Bladee"],
+        ["https://dl.dropbox.com/scl/fi/qq7kfw74f0ular34x72xf/Cherry-Bracelets.mp3?rlkey=3rybbi50r359ozkx0aybljihq&st=t4limh7t&dl=0", "", "Cherry Bracelets", "Bladee, Yung Lean, Ecco2k"],
+        ["https://dl.dropbox.com/scl/fi/hz62uwzy2nf7oa9gdgwu6/Best-Buy.mp3?rlkey=0fb9molbzin8hhkyb4ipx1wj4&st=hfvfgqv8&dl=0", "", "Best Buy", "Bladee"],
+    ],
+    [
+        ["EVOL", "Future", "2016", "Album", "./Images/Albums/Evol.png", "rgb(49, 55, 66)"],
+        ["https://dl.dropbox.com/scl/fi/3v9aojse12a23i7e4s9v9/Ain-t-No-Time.mp3?rlkey=n4lnqdlg0xex1itj8whwvvl9u&st=iw1bfkcm&dl=0", "", "Ain't No Time", "Future"],
+        ["https://dl.dropbox.com/scl/fi/ekv4hgjqtdf0d0ez6sluw/In-Her-Mouth.mp3?rlkey=c9mo5no8x67ve4bkfn59vsj0l&st=agp4ohki&dl=0", "", "In Her Mouth", "Future"],
+        ["https://dl.dropbox.com/scl/fi/ltt160vogwfyzad5cntf6/Maybach.mp3?rlkey=i0hcz9ut3uiwg4buwfp2kq10e&st=5pvglg8m&dl=0", "", "Maybach", "Future"],
+        ["https://dl.dropbox.com/scl/fi/tyz25cqrp1y2rafqk6cna/Xanny-Family.mp3?rlkey=yhl2tco77af1ex9kjwv5wsuhb&st=uftery6t&dl=0", "", "Xanny Family", "Future"],
+        ["https://dl.dropbox.com/scl/fi/h29rb1cvh35sfrx0tkegb/Lil-Haiti-Baby.mp3?rlkey=17ys4eette76xitv426wgev28&st=re8qqwye&dl=0", "", "Lil Haiti Baby", "Future"],
+        ["https://dl.dropbox.com/scl/fi/rjdgu1o1mgbl4b03innf8/Photo-Copied.mp3?rlkey=ff74cefwhyng41uv1jeeg7ovr&st=0lqatiuz&dl=0", "", "Photo Copied", "Future"],
+        ["https://dl.dropbox.com/scl/fi/qnjvg80ck4wthtm3qa1e4/Seven-Rings.mp3?rlkey=i23c9atixhxvvn0drludey4du&st=ok4j2sgk&dl=0", "", "Seven Rings", "Future"],
+        ["https://dl.dropbox.com/scl/fi/2tx0yiejqbjbbz8tdbkar/Lie-To-Me.mp3?rlkey=a416i4uv5pzvatfux2714cgk1&st=ltf17k6q&dl=0", "", "Lie To Me", "Future"],
+        ["https://dl.dropbox.com/scl/fi/iymi0dgdz6t6347mtu1te/Program.mp3?rlkey=c3tcci4df2dzuu8wman8vq0gk&st=os8pak2k&dl=0", "", "Program", "Future"],
+        ["https://dl.dropbox.com/scl/fi/gr3cttp1n3djylbqrhacq/Low-Life.mp3?rlkey=72qqqp2jcdcd8bmkdxkvtbwl6&st=0fuljorw&dl=0", "", "Low Life", "Future, The Weeknd"],
+        ["https://dl.dropbox.com/scl/fi/i03m2tv1bvvqa1tz71eg3/Fly-Shit-Only.mp3?rlkey=sc7e0l120vcoo19m63dzmr8u3&st=bi96mme5&dl=0", "", "Fly Shit Only", "Future"],
+        ["https://dl.dropbox.com/scl/fi/k3bkx2kj1f567gwvmiwxk/Wicked.mp3?rlkey=s86u9rwqocpur12kpacthdnwq&st=jkbfp753&dl=0", "", "Wicked", "Future"],
     ],
 ]
 
@@ -169,7 +221,7 @@ function updateSongProgression(){
 
 function updateCurrentAlbum(album){
     list = all[album]
-    songs.scrollTo(0, 0)
+    window.scrollTo(0, 0)
     updateCurrentSongs()
 }
 
@@ -189,6 +241,14 @@ function updateCurrentSongs(){
     albumName.innerHTML = list[0][0]
     albumDesc.innerHTML = list[0][1] + " • " + list[0][2] + " • " + list[0][3]
 
+    title.style.background = `linear-gradient(to bottom, ${list[0][5]}, rgb(40, 40, 40))`
+
+    if (playing == list){
+        albumName.style.color = "rgb(36, 156, 68)"
+    } else {
+        albumName.style.color = "rgb(255, 255, 255)"
+    }
+
     for (let i = 1; i < list.length; i++){
         const createdSong = document.createElement("li")
         createdSong.classList.add("setplay")
@@ -196,9 +256,20 @@ function updateCurrentSongs(){
         const songContainer = document.createElement("div")
         songContainer.classList.add("song-container")
 
-        const songText = document.createElement("span")
-        songText.innerHTML = `${list[i][2]}<br>${list[i][3]}`
-        songContainer.appendChild(songText)
+        const songNumber = document.createElement("p")
+        songNumber.classList.add("song-num")
+        songNumber.innerHTML = `                  ${i}`
+        songContainer.appendChild(songNumber)
+
+        const songName = document.createElement("p")
+        songName.classList.add("song-name")
+        songName.innerHTML = list[i][2]
+        songContainer.appendChild(songName)
+
+        const songFeature = document.createElement("p")
+        songFeature.classList.add("song-feature")
+        songFeature.innerHTML = list[i][3]
+        songContainer.appendChild(songFeature)
 
         const createdLike = document.createElement("img")
         createdLike.classList.add("song-like")
@@ -253,7 +324,8 @@ function updateCurrentSongs(){
         songs.appendChild(createdSong)
 
         if (list[i][1] == currentSong){
-            createdSong.style.color = "rgb(36, 156, 68)"
+            songNumber.style.color = "rgb(36, 156, 68)"
+            songName.style.color = "rgb(36, 156, 68)"
         }
     }
 
@@ -297,7 +369,12 @@ function updateCurrentPlayer(song, pos){
     songData()
 
     if (list == playing){
-        songs.querySelectorAll("li")[pos - 1].style.color = "rgb(36, 156, 68)"
+        const songContainer = songs.querySelectorAll("li")[pos - 1]
+        const songNumber = songContainer.querySelector(".song-num")
+        const songName = songContainer.querySelector(".song-name")
+
+        songNumber.style.color = "rgb(36, 156, 68)"
+        songName.style.color = "rgb(36, 156, 68)"
     }
 }
 
@@ -383,7 +460,11 @@ function songData(){
 
 function resetColours(){
     songs.childNodes.forEach(song => {
-        song.style.color = "rgb(0, 0, 0)"
+        const songNumber = song.querySelector(".song-num")
+        const songName = song.querySelector(".song-name")
+
+        songNumber.style.color = "rgb(255, 255, 255)"
+        songName.style.color = "rgb(255, 255, 255)"
     })
 }
 
@@ -491,6 +572,8 @@ function addButtons() {
                     unloadAudio()
                     playing = list
                     loaded = playing
+
+                    albumName.style.color = "rgb(36, 156, 68)"
                 }
 
                 clearQueues()
@@ -505,7 +588,7 @@ function addButtons() {
             }
         })
         button.addEventListener("mouseover", function() {
-            button.style.background = "rgb(40, 40, 40)"
+            button.style.background = "rgb(50, 50, 50)"
         })
         button.addEventListener("mouseleave", function() {
             button.style.background = songs.style.background
@@ -592,4 +675,5 @@ volumebar.addEventListener("input", (event) => {
     volume = event.target.value
 })
 
+modifyLibrary()
 updateCurrentSongs()
