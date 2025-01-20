@@ -126,6 +126,11 @@ body{
     color: rgb(255, 255, 255);
     white-space: nowrap;
     overflow: hidden;
+    cursor: pointer;
+}
+
+#song-name:hover{
+    text-decoration: underline;
 }
 
 #song-feature{
@@ -206,6 +211,21 @@ ol{
     color: rgb(180, 180, 180);
     white-space: nowrap;
     overflow: hidden;
+}
+
+.song-album{
+    position: absolute;
+    margin-left: 1000px;
+    font-size: 1.2em;
+    color: rgb(180, 180, 180);
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.song-album:hover{
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
 }
 
 .song-like{
