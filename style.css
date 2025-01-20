@@ -161,10 +161,12 @@ body{
     width: 400px;
     height: 10px;
     margin-top: 10px;
+    overflow-x: visible;
 }
 
 #volume{
     width: 200px;
+    overflow-x: visible;
 }
 
 ol{
