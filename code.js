@@ -126,7 +126,7 @@ let all = [
         ["https://dl.dropbox.com/scl/fi/6yys8amydmkz1g80eckaw/Broken-Angel-Hospital.mp3?rlkey=8rkflwimj9yi4mdngn13jvkre&st=ynmuuxb5&dl=0", "", "Broken Angel Hospital", "Sematary, Ghost Mountain"],
     ],
     [
-        ["Hundred Acre Wrist", "Sematary, Ghost Mountain", "2020", "Album", "./Images/Albums/Hundred Acre Wrist.png", "rgb(117, 153, 32)"],
+        ["Hundred Acre Wrist", "Sematary, Ghost Mountain", "2020", "Album", "./Images/Albums/Hundred Acre Wrist.png", "rgb(42, 173, 21)"],
         ["https://dl.dropbox.com/scl/fi/w6nduxgk0gsrdarjwt6q7/Heffalumps.mp3?rlkey=a5sk3ewmafbte932xq1nh9j3m&st=zf0s0zwv&dl=0", "", "Heffalumps", "Sematary, Ghost Mountain"],
         ["https://dl.dropbox.com/scl/fi/rt0611861niumj6gayfh6/Louisville-Slugger.mp3?rlkey=c4emrc6usuhlj09jhcq4mhv8q&st=2jsjrfor&dl=0", "", "Louisville Slugger", "Sematary, Ghost Mountain"],
         ["https://dl.dropbox.com/scl/fi/zltlq9g401rowx5sbi3s9/Tourniquet.mp3?rlkey=6i80660vkbz1qhj2px0j1szxw&st=h6xeglbs&dl=0", "", "Tourniquet", "Sematary, Ghost Mountain"],
@@ -274,12 +274,6 @@ function updateCurrentSongs(){
 
     title.style.background = `linear-gradient(to bottom, ${list[0][5]}, rgb(40, 40, 40))`
 
-    if (playing == list && !isNaN(currentSong)){
-        albumName.style.color = "rgb(36, 156, 68)"
-    } else {
-        albumName.style.color = "rgb(255, 255, 255)"
-    }
-
     for (let i = 1; i < list.length; i++){
         const createdSong = document.createElement("li")
         createdSong.classList.add("setplay")
@@ -344,7 +338,7 @@ function updateCurrentSongs(){
                 added.push(albumImage.src)
                 all[0].push(added)
 
-                if (playing = all[0]){
+                if (playing == all[0]){
                     const newAudio = new Audio(all[0][all[0].length - 1][0])
                     newAudio.load()
                     all[0][all[0].length - 1][1] = newAudio
@@ -463,8 +457,8 @@ function addLibrary(){
     albumImage.addEventListener("click", function(){
         updateCurrentAlbum(albumImage.dataset.name)
 
-        title.style.visibility = "visible"
-        songs.style.visibility = "visible"
+        title.style.display = "flex"
+        songs.style.display = "block"
         clearSearches()
     })
 }
@@ -537,6 +531,10 @@ function findAlbum(update, song){
         for (let j = 0; j < all[i].length; j++){
             if (all[i][j][2] == song){
                 if (update){
+                    title.style.display = "flex"
+                    songs.style.display = "block"
+                    clearSearches()
+
                     updateCurrentAlbum(i)
                 } else {
                     return all[i]
@@ -638,8 +636,6 @@ function addButtons() {
                     unloadAudio()
                     playing = list
                     loaded = playing
-
-                    albumName.style.color = "rgb(36, 156, 68)"
                 }
 
                 clearQueues()
@@ -664,9 +660,7 @@ function addButtons() {
 
 function clearSearches(){
     searchBar.value = ""
-    while (searching.firstChild){
-        searching.removeChild(searching.firstChild)
-    }
+    searching.style.display = "none"
 }
 
 document.body.onkeydown = function(event){
@@ -686,10 +680,19 @@ document.body.onkeydown = function(event){
             const initital = searchBar.value.toLowerCase()
             const tags = initital.split(" ")
 
-            title.style.visibility = "hidden"
-            songs.style.visibility = "hidden"
+            title.style.display = "none"
+            songs.style.display = "none"
+
+            const values = {
+                "Artist": "artists",
+                "Album": "albums",
+                "Single": "singles",
+                "EP": "eps",
+                "Playlist": "playlists",
+            }
 
             if (initital.trim()){
+                searching.style.display = "block"
                 for (let i = 0; i < all.length; i++){
                     const albumName = all[i][0][0]
                     const albumArtist = all[i][0][1]
@@ -704,24 +707,48 @@ document.body.onkeydown = function(event){
                             createdAlbum.style.width = "150px"
                             createdAlbum.style.height = "150px"
                             createdAlbum.setAttribute("data-name", identifier)
+
                             createdAlbum.addEventListener("click", function(){
-                                title.style.visibility = "visible"
-                                songs.style.visibility = "visible"
+                                title.style.display = "flex"
+                                songs.style.display = "block"
 
                                 updateCurrentAlbum(i)
                                 clearSearches()
                             })
-                            searching.appendChild(createdAlbum)
+                            
+                            const sectionID = values[all[i][0][3]]
+                            if (sectionID){
+                                const section = document.getElementById(sectionID)
+                                if (section.childElementCount <= 10){
+                                    section.appendChild(createdAlbum)
+                                }
+                            }
                         }
                     } else {
-                        const images = searching.querySelectorAll("img")
-                        images.forEach(img => {
-                            if (img.dataset.name == identifier){
-                                searching.removeChild(img)
-                            }
+                        const sections = searching.querySelectorAll("div")
+                        sections.forEach(section => {
+                            const images = section.querySelectorAll("img")
+                            images.forEach(img => {
+                                if (img.dataset.name == identifier){
+                                    section.removeChild(img)
+                                }
+                            })
                         })
                     }
-                }   
+                }
+
+                Array.from(searching.children).forEach((text, index, array) => {
+                    if (text.tagName == "P") {
+                        const section = array[index + 1]
+                        if (section.childElementCount == 0){
+                            text.style.display = "none"
+                            section.style.display = "none"
+                        } else {
+                            text.style.display = "block"
+                            section.style.display = "flex"
+                        }
+                    }
+                })
             } else {
                 clearSearches()
             }
