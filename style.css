@@ -72,10 +72,27 @@ body{
     padding-left: 75px;
 }
 
-#searching {
-    margin-top: 50px;
+#searching{
     padding-left: 50px;
-    position: fixed;
+    padding-top: 50px;
+    display: none;
+}
+
+#searching p{
+    margin: 0;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.section{
+    display: flex;
+    padding-left: 25px;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
 #left{
@@ -215,7 +232,7 @@ ol{
 
 .song-album{
     position: absolute;
-    margin-left: 1000px;
+    margin-left: 40%;
     font-size: 1.2em;
     color: rgb(180, 180, 180);
     white-space: nowrap;
