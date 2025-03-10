@@ -7,7 +7,99 @@
         <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
     </head>
 
+    <body onload="checkAuthState()">
+        <div class="title">
+            <h1>Welcome to DaYacob Music</h1>
+        </div>
+        <form id="login" class="wrapper">
+            <h1> Login </h1>
+            <p class="error" id="login-email-info"></p>
+            <label> Email: </label>
+            <input type="email" id="login-email">
+            <p class="error" id="login-password-info"></p>
+            <label> Password: </label>
+            <input type="password" id="login-password"><br><br>
+            <button type="button" onclick="login()">Login</button><br><br>
+            <button type="button" onclick="changeMethod()"> Don't have an account? Create one here! </button>
+        </form>
+
+        <form id="signup" class="wrapper">
+            <h1> Signup </h1>
+            <p class="error" id="signup-email-info"></p>
+            <label> Email: </label>
+            <input type="email" id="signup-email">
+            <p class="error" id="signup-password-info"></p>
+            <label> Password: </label>
+            <input type="password" id="signup-password"><br><br>
+            <button type="button" onclick="signup()">Signup</button><br><br>
+            <button type="button" onclick="changeMethod()"> Already have an account? Login here! </button>
+        </form>
+    </body>
+
     <style>
+        *{
+            user-select: none;
+            outline: none;
+            font-family: "Montserrat", sans-serif;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            margin: 0;
+        }
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgb(150, 150, 150);
+            height: 100vh;
+        }
+
+        .title{
+            position: absolute;
+            top: 25px;
+            font-size: 40px;
+        }
+
+        .wrapper{
+            border: 2px solid rgb(255, 255, 255);
+            background: rgb(100, 100, 100);
+            padding: 25px;
+            text-align: center;
+        }
+
+        .wrapper h1{
+            color: rgb(255, 255, 255);
+            font-size: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+
+        .wrapper label{
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+        .wrapper input{
+            width: 100%;
+            margin-bottom: 25px;
+            height: 20px;
+            font-weight: bold;
+        }
+
+        .wrapper button{
+            font-weight: bold;
+            border: none;
+            outline: none;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .error{
+            color: rgb(200, 0, 0);
+            font-weight: bold;
+            margin-bottom: 5%;
+        }
+
         #signup{
             display: none;
         }
@@ -34,7 +126,7 @@
             })
         }
 
-        function isValidPassword(email, password){
+        function isValidPassword(email, password){ //Checks if the password is safe
             if (password === email){
                 return {valid: false, message: "Password cannot be the same as your email."}
             }
@@ -52,7 +144,7 @@
             return {valid: true}
         }
 
-        function login(){
+        function login(){ //Login method
             var email = document.getElementById("login-email").value
             var password = document.getElementById("login-password").value
             //Gets the email and password from the ids.
@@ -81,7 +173,7 @@
             })
         }
 
-        function signup(){
+        function signup(){ //Signup method
             var email = document.getElementById("signup-email").value
             var password = document.getElementById("signup-password").value
             //Gets the email and password from the ids.
@@ -112,7 +204,7 @@
             }
         }
 
-        function changeMethod(){
+        function changeMethod(){ //Switches method
             var login = document.getElementById("login").style
             var signup = document.getElementById("signup").style
 
@@ -126,29 +218,4 @@
         }
 
     </script>
-    <body onload="checkAuthState()">
-        <form id="login">
-            <h1> Login </h1>
-            <p id="login-email-info"></p>
-            <label> Email: </label>
-            <input type="email" id="login-email"><br><br>
-            <p id="login-password-info"></p>
-            <label> Password: </label>
-            <input type="password" id="login-password"><br><br>
-            <button type="button" onclick="login()">Login</button><br><br>
-            <button type="button" onclick="changeMethod()"> Don't have an account? Create one here! </button>
-        </form>
-
-        <form id="signup">
-            <h1> Signup </h1>
-            <p id="signup-email-info"></p>
-            <label> Email: </label>
-            <input type="email" id="signup-email"><br><br>
-            <p id="signup-password-info"></p>
-            <label> Password: </label>
-            <input type="password" id="signup-password"><br><br>
-            <button type="button" onclick="signup()">Signup</button><br><br>
-            <button type="button" onclick="changeMethod()"> Already have an account? Login here! </button>
-        </form>
-    </body>
 </html>
