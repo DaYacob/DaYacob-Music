@@ -156,6 +156,12 @@ body{
     color: rgb(125, 125, 125);
     white-space: nowrap;
     overflow: hidden;
+    cursor: pointer;
+}
+
+#song-feature:hover{
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
 }
 
 #library{
@@ -228,6 +234,12 @@ ol{
     color: rgb(180, 180, 180);
     white-space: nowrap;
     overflow: hidden;
+    cursor: pointer;
+}
+
+.song-feature:hover{
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
 }
 
 .song-album{
