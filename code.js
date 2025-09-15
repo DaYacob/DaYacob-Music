@@ -70,13 +70,12 @@ checkAuthState()
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Main Array
 
-
 let all = [
     [
         ["Liked Songs", "DaYacob Music", "0 Songs", "Playlist", "./Images/Albums/Liked.png", "rgb(230, 177, 80)"],
     ],
     [
-        ["Slime Season 2", "Young Thug", "2015", "Album", "./Images/Albums/Slime Season 2.png", "rgb(64, 5, 5)"],
+        ["Slime Season 2", "Young Thug", "2015", "Album", "https://dl.dropbox.com/scl/fi/dfdw8hxzbs9q4bukedvlr/Slime-Season-2.png?rlkey=ztaby508nnyvur1bnpniv2vdy&st=ao0tqnj0&dl=0", "rgb(64, 5, 5)"],
         ["https://dl.dropbox.com/scl/fi/qipn7dip79mgpvmqmq0tp/Big-Racks.mp3?rlkey=94ehurehk5t8y6f7251crld7n&st=cdwjpugw&dl=0", "", "Big Racks", "Young Thug, Lil Uzi Vert"],
         ["https://dl.dropbox.com/scl/fi/6sbo2jhttq8sgp9akpjsa/Thief-In-The-Night.mp3?rlkey=ixbfoc6impant2jqqp3fyl1nq&st=blotazi8&dl=0", "", "Thief In The Night", "Young Thug, Trouble"],
         ["https://dl.dropbox.com/scl/fi/ynmzgobpubwbwksrxb4gl/Don-t-Know.mp3?rlkey=4o77givrmgyze51dckpaurx3y&st=2enayzw8&dl=0", "", "Don't Know", "Young Thug, Shad Da God"],
@@ -101,36 +100,73 @@ let all = [
         ["https://dl.dropbox.com/scl/fi/gr2ubndnwyfwjipyeddnn/Love-Me-Forever-Chopped-Screwed.mp3?rlkey=4af7h9dr9f5ejv7lugzsdwj79&st=lpbbk059&dl=0", "", "Love Me Forever (Chopped & Screwed)", "Young Thug"],
     ],
     [
-        ["Off The Yae", "Acid Souljah", "2024", "Single", "./Images/Albums/Off The Yae.png", "rgb(212, 172, 169)"],
+        ["Off The Yae", "Acid Souljah", "2024", "Single", "https://dl.dropbox.com/scl/fi/tm7qxmyh86ll60cw0alji/Off-The-Yae.png?rlkey=fx2rba4pkydjt90tqb7m0wwrq&st=dbknjql0&dl=0", "rgb(212, 172, 169)"],
         ["https://dl.dropbox.com/scl/fi/1tbqj8nami476btpe651c/Off-The-Yae.mp3?rlkey=f03ptdceh9et8cjomppbx20f5&st=2i8bnzwk&dl=0", "", "Off The Yae", "Acid Souljah"],
     ],
     [
-        ["Just Score It", "OsamaSon", "2024", "Single", "./Images/Albums/Just Score It.png", "rgb(189, 21, 21)"],
+        ["Just Score It", "OsamaSon", "2024", "Single", "https://dl.dropbox.com/scl/fi/47wohn9ybi3kvnkoombd2/Just-Score-It.png?rlkey=elqivyvv0ry0cjwjgbgowvpce&st=2crctge3&dl=0", "rgb(189, 21, 21)"],
         ["https://dl.dropbox.com/scl/fi/xbdyidv1qypaf833mlfzt/Just-Score-It.mp3?rlkey=tnstpas4leadmfpauy514rb14&st=eea03cc9&dl=0", "", "Just Score It", "OsamaSon"],
     ],
     [
-        ["The Whole World Is Free", "OsamaSon", "2024", "Single", "./Images/Albums/The Whole World Is Free.png", "rgb(209, 51, 33)"],
+        ["The Whole World Is Free", "OsamaSon", "2024", "Single", "https://dl.dropbox.com/scl/fi/gy9aawakamaknx0u4g95z/The-Whole-World-Is-Free.png?rlkey=vk45pxqihczipc8rpy4f2pq8e&st=d0itkpom&dl=0", "rgb(209, 51, 33)"],
         ["https://dl.dropbox.com/scl/fi/z7zuxmqoscq4eyna5vgwx/The-Whole-World-Is-Free.mp3?rlkey=7p3dc93azp0e3i03mnf01b643&st=w9chjuip&dl=0", "", "The Whole World Is Free", "OsamaSon"],
     ],
     [
-        ["shine n peace", "Nettspend", "2023", "Single", "./Images/Albums/shine n peace.png", "rgb(97, 23, 23)"],
+        ["shine n peace", "Nettspend", "2023", "Single", "https://dl.dropbox.com/scl/fi/mfolqyzypq1qbm3jcmkc8/shine-n-peace.png?rlkey=ji7ppclvq3tszxrhep38oksxg&st=mpg82yhz&dl=0", "rgb(97, 23, 23)"],
         ["https://dl.dropbox.com/scl/fi/kcw8exgv4iyvs68pddfps/shine-n-peace.mp3?rlkey=rxrdm7mtcg4zzyagqsurgk2s6&st=h1brxsuw&dl=0", "", "shine n peace", "Nettspend"],
     ],
     [
-        ["nothing like uuu", "Nettspend", "2024", "Single", "./Images/Albums/nothing like uuu.png", "rgb(50, 54, 66)"],
+        ["nothing like uuu", "Nettspend", "2024", "Single", "https://dl.dropbox.com/scl/fi/44yuxz71yt975c9y2j48x/nothing-like-uuu.png?rlkey=ek18l6yk643yhwod0weyjdf0c&st=ql5r1v4s&dl=0", "rgb(50, 54, 66)"],
         ["https://dl.dropbox.com/scl/fi/guldh4jnuxcmbfb4rhgff/nothing-like-uuu.mp3?rlkey=i4gknb05i75jy8g6upj96umhz&st=kjkzgx66&dl=0", "", "nothing like uuu", "Nettspend"],
     ],
     [
-        ["and", "xaviersobased", "2021", "EP", "./Images/Albums/and.png", "rgb(100, 100, 100)"],
+        ["That One Song", "Nettspend", "2024", "Single", "https://dl.dropbox.com/scl/fi/mrw34osfwnd20uh0zoa08/That-One-Song.png?rlkey=wo7jxpdw5dzoillxfxl39r01x&st=qn4ua7nj&dl=0", "rgb(30, 30, 30)"],
+        ["https://dl.dropbox.com/scl/fi/3513bgufcpdupxrk8qs2a/That-One-Song.mp3?rlkey=vqeuvlfkls8tb5alywjhfnshm&st=pdy8zpf5&dl=0", "", "That One Song", "Nettspend"],
+    ],
+    [
+        ["and", "xaviersobased", "2021", "EP", "https://dl.dropbox.com/scl/fi/ryla1udlqaozxtg6cjcwf/_cover.png?rlkey=nb9fis7udijr4uedq5pfs46d6&st=syjq8g0z&dl=0", "rgb(100, 100, 100)"],
         ["https://dl.dropbox.com/scl/fi/fudubjbmevj5e1jy1fh8t/turn-up.mp3?rlkey=tnktnaljql78hjtvjfvjtdymf&st=rnp0o81k&dl=0", "", "turn up!!", "xaviersobased"],
         ["https://dl.dropbox.com/scl/fi/8tz3nce50rjjgzn91zca7/prescriptions.mp3?rlkey=7u7cfro99xok8h64p6t1on46u&st=71ymeyfg&dl=0", "", "prescriptions", "xaviersobased"],
     ],
     [
-        ["Hop Out", "Lil Shine, Summrs", "2023", "Single", "./Images/Albums/Hop Out.png", "rgb(140, 124, 74)"],
+        ["Hop Out", "Lil Shine, Summrs", "2023", "Single", "https://dl.dropbox.com/scl/fi/7peukhiwgiwlzptfwedv1/Hop-Out.png?rlkey=qsxvtaktfdnhjt7uvy40sm1rz&st=ntxn7klv&dl=0", "rgb(140, 124, 74)"],
         ["https://dl.dropbox.com/scl/fi/x7a9wyx6dnvn6he0xabec/Hop-Out.mp3?rlkey=m03m31k4uvks01bcszpq4pvkb&st=jinjsxc6&dl=0", "", "Hop Out", "Lil Shine, Summrs"],
     ],
     [
-        ["Slime Season 3", "Young Thug", "2016", "Album", "./Images/Albums/Slime Season 3.png", "rgb(235, 112, 103)"],
+        ["Music", "Playboi Carti", "2025", "Album", "https://dl.dropbox.com/scl/fi/r5k7scau3zxfjd3vn1jn6/Music.png?rlkey=nndc9xutlmd9cq0m95za5byc6&st=lw85b9ul&dl=0", "rgb(75, 75, 75)"],
+        ["https://dl.dropbox.com/scl/fi/rizm3mbz8pyqakctr8hz6/POP-OUT.mp3?rlkey=60nlyp8zstcc9cy9g8hw2718q&st=kyfu3x5r&dl=0", "", "POP OUT", "Playboi Carti"],
+        ["https://dl.dropbox.com/scl/fi/t4w4hrslottq8lkninxb1/CRUSH.mp3?rlkey=scs3sgtgo0v0nqof8p9484w5x&st=e9xp5ty5&dl=0", "", "CRUSH", "Playboi Carti, Travis Scott"],
+        ["https://dl.dropbox.com/scl/fi/igm0enna1e7onhp0e0iui/K-POP.mp3?rlkey=8q8hsu829kejtg17es1c9swgu&st=nou0hvkd&dl=0", "", "K POP", "Playboi Carti"],
+        ["https://dl.dropbox.com/scl/fi/0fugzky08bilf2k2nbjl1/EVIL-J0RDAN.mp3?rlkey=mdjyue820xt2v8ykqzzyg6mo9&st=x6fvrdgq&dl=0", "", "EVIL J0RDAN", "Playboi Carti"],
+        ["https://dl.dropbox.com/scl/fi/hub9ubc7q2a0s5r52oenh/MOJO-JOJO.mp3?rlkey=pmhfgm3tuzkw956hszewbrgdr&st=lrqivsgr&dl=0", "", "MOJO JOJO", "Playboi Carti, Kendrick Lamar"],
+        ["https://dl.dropbox.com/scl/fi/ceak4tylwl4y7ub7h85tt/PHILLY.mp3?rlkey=6lramh11id7wr2odo3df4mvns&st=5wktk79d&dl=0", "", "PHILLY", "Playboi Carti, Travis Scott"],
+        ["https://dl.dropbox.com/scl/fi/jtthmj0jdk0qt4qr2k2ht/RADAR.mp3?rlkey=d7y4kpst01mtf4xi33h3rb7wv&st=s92irtv7&dl=0", "", "RADAR", "Playboi Carti"],
+        ["https://dl.dropbox.com/scl/fi/l05bwdj1entfe0dnvnrki/RATHER-LIE.mp3?rlkey=3zhd05u8bsnp971a5wnyypwt0&st=2kx4m5xo&dl=0", "", "RATHER LIE", "Playboi Carti, The Weeknd"],
+        ["https://dl.dropbox.com/scl/fi/ntqtxa0a0uqkvwkbnjwl3/FINE-SHIT.mp3?rlkey=d5mgkvgu00ycu07levcvnsu0h&st=xczlwkt6&dl=0", "", "FINE SHIT", "Playboi Carti"],
+        ["https://dl.dropbox.com/scl/fi/6f7z16vxq6moeb779t30t/BACKD00R.mp3?rlkey=4hsxuo95riskzj8ocej3t0vrm&st=1w15f9hs&dl=0", "", "BACKD00R", "Playboi Carti, Kendrick Lamar, Jhené Aiko"],
+        ["https://dl.dropbox.com/scl/fi/wa1q1qdx4d1gtbjy1yzk1/TOXIC.mp3?rlkey=5ob2g6yr8rp049qvmrgzt3nsv&st=pyyb0pec&dl=0", "", "TOXIC", "Playboi Carti, Skepta"],
+        ["https://dl.dropbox.com/scl/fi/nvi29tepp5u45cdtd3xxd/MUNYUN.mp3?rlkey=tc5rq8lehtdoa64d28so52o7h&st=ch6jl6jz&dl=0", "", "MUNYUN", "Playboi Carti"],
+        ["https://dl.dropbox.com/scl/fi/db9x7lj1cqzpej4f2tdqq/CRANK.mp3?rlkey=liwv0k503zicoh53narwfap4o&st=jibfgllp&dl=0", "", "CRANK", "Playboi Carti"],
+        ["https://dl.dropbox.com/scl/fi/onijpc0ulch717nsmtmoq/CHARGE-DEM-HOES-A-FEE.mp3?rlkey=ge8ocm0zo9fnoe3h4t6p57500&st=mjwe7ddw&dl=0", "", "CHARGE DEM HOES A FEE", "Playboi Carti, Future, Travis Scott"],
+        ["https://dl.dropbox.com/scl/fi/6rqaleied55gdxm4skawg/GOOD-CREDIT.mp3?rlkey=o1niefabm84gwz21x6zckb4p0&st=k1q13qea&dl=0", "", "GOOD CREDIT", "Playboi Carti, Kendrick Lamar"],
+        ["https://dl.dropbox.com/scl/fi/fxqs9dnaps9202cdqru5g/I-SEEEEEE-YOU-BABY-BOI.mp3?rlkey=tds900dy4kmlzqge4yuspr0ab&st=xyjv7yu1&dl=0", "", "I SEEEEEE YOU BABY BOI", "Playboi Carti"],
+        ["https://dl.dropbox.com/scl/fi/aodyczaondv5ib5zqx5ey/WAKE-UP-F1LTHY.mp3?rlkey=vcai0grligh2uxxq73vayoy9b&st=rs30n873&dl=0", "", "WAKE UP F1LTHY", "Playboi Carti, Travis Scott"],
+        ["https://dl.dropbox.com/scl/fi/c4v87a4gbvp2pyuyjmivk/JUMPIN.mp3?rlkey=h7i7jiluotuqk7qjs7yh003dg&st=1o2xode1&dl=0", "", "JUMPIN", "Playboi Carti, Lil Uzi Vert"],
+        ["https://dl.dropbox.com/scl/fi/pgdjugwbn12e3r7ku3s4j/TRIM.mp3?rlkey=ola0yq29c1klsw1v8troj7b2l&st=zim76r3n&dl=0", "", "TRIM", "Playboi Carti, Future"],
+        ["https://dl.dropbox.com/scl/fi/rfgilfrjzo2anlm71vaqs/COCAINE-NOSE.mp3?rlkey=gmjsi6v8hlon3ntlmnadwtvo4&st=3d4jdnk0&dl=0", "", "COCAINE NOSE", "Playboi Carti"],
+        ["https://dl.dropbox.com/scl/fi/3h2fowo8rjgwvnb12bqv1/WE-NEED-ALL-DA-VIBES.mp3?rlkey=16xs5x8wud1xd6qaglzwvkl62&st=ayjfgfdm&dl=0", "", "WE NEED ALL DA VIBES", "Playboi Carti, Young Thug, Ty Dolla $ign"],
+        ["https://dl.dropbox.com/scl/fi/s445yf5l28fcw6ugft1s8/OLYMPIAN.mp3?rlkey=kcnqqae7ucokv9xzmgxcy1izj&st=b71i3bwl&dl=0", "", "OLYMPIAN", "Playboi Carti"],
+        ["https://dl.dropbox.com/scl/fi/q4dzd3hadbty8jbyy7ijq/OPM-BABI.mp3?rlkey=dtlo3accmo817x7a0i23wb4i5&st=iucvy03e&dl=0", "", "OPM BABI", "Playboi Carti"],
+        ["https://dl.dropbox.com/scl/fi/yay7y8pqqw84guhteatw3/TWIN-TRIM.mp3?rlkey=xzt0shz2nb3f62df0f7odtpo0&st=p7c2tw4f&dl=0", "", "TWIN TRIM", "Lil Uzi Vert"],
+        ["https://dl.dropbox.com/scl/fi/ljb78qw7ek1vmwr4uuxx8/LIKE-WEEZY.mp3?rlkey=o141la23fjedvqtjz61xp36xa&st=00vdp2sp&dl=0", "", "LIKE WEEZY", "Playboi Carti"],
+        ["https://dl.dropbox.com/scl/fi/k9bf2jbmxgzxigv83w9h1/DIS-1-GOT-IT.mp3?rlkey=fjwhkj0xh05cntvf3pt3376s2&st=a5r1boxw&dl=0", "", "DIS 1 GOT IT", "Playboi Carti"],
+        ["https://dl.dropbox.com/scl/fi/y1n6m7bfyxzc3xr27sqen/WALK.mp3?rlkey=yvapx8s94yog8vwuwtcmv9kw8&st=h866s2p6&dl=0", "", "WALK", "Playboi Carti"],
+        ["https://dl.dropbox.com/scl/fi/htukn9ljmw15p59k562s9/HBA.mp3?rlkey=hrb72reqnp2xq9h04l4b0vyqi&st=84cdm7j8&dl=0", "", "HBA", "Playboi Carti"],
+        ["https://dl.dropbox.com/scl/fi/s7fd9e2py7tawg6t6z2dn/OVERLY.mp3?rlkey=qm83lq2bpzugmktpeam63c752&st=j2175gox&dl=0", "", "OVERLY", "Playboi Carti"],
+        ["https://dl.dropbox.com/scl/fi/xoil94cfux0uqdiz6snfj/SOUTH-ATLANTA-BABY.mp3?rlkey=xa6dhmcprhdtrua2tm7zfgcmb&st=365n9zum&dl=0", "", "SOUTH ATLANTA BABY", "Playboi Carti"],
+    ],
+    [
+        ["Slime Season 3", "Young Thug", "2016", "Album", "https://dl.dropbox.com/scl/fi/f2q54pz89hz5dvhpwtp9v/Slime-Season-3.png?rlkey=xj3cq6o5og9e8z3u2kh6viktu&st=edobvl0i&dl=0", "rgb(235, 112, 103)"],
         ["https://dl.dropbox.com/scl/fi/5n2lscpv5sqa3bdi3h95m/With-Them.mp3?rlkey=qwvopn0f0bj869a0jkbs13hmj&st=q7d5jb51&dl=0", "", "With Them", "Young Thug"],
         ["https://dl.dropbox.com/scl/fi/zlwdtkgn8wubhg2tzaynb/Memo.mp3?rlkey=pjdu52r460jpga88f1m92p1fs&st=ro8rhu26&dl=0", "", "Memo", "Young Thug"],
         ["https://dl.dropbox.com/scl/fi/8n18gcc15q6qe81f7xl5t/Drippin.mp3?rlkey=y465s7zvdyx8lrvo348qboeyx&st=66z0bnpj&dl=0", "", "Drippin'", "Young Thug"],
@@ -141,7 +177,7 @@ let all = [
         ["https://dl.dropbox.com/scl/fi/gbih96bvkkf9i2ur64wrd/Problem.mp3?rlkey=3o1m16vgov7v1eq6v7gr1nys6&st=1m60kshp&dl=0", "", "Problem", "Young Thug"],
     ],
     [
-        ["Jeffery", "Young Thug", "2016", "Album", "./Images/Albums/Jeffery.png", "rgb(111, 122, 171)"],
+        ["Jeffery", "Young Thug", "2016", "Album", "https://dl.dropbox.com/scl/fi/tm9s74m525ppcy59l2237/Jeffery.png?rlkey=4f4frvgr24x5cw3ztr08e0dxs&st=uouzft2l&dl=0", "rgb(111, 122, 171)"],
         ["https://dl.dropbox.com/scl/fi/nsv9ottqpserjlaj8qqst/Wyclef-Jean.mp3?rlkey=1zenpygfpnx7mwlb13b07f82n&st=29hv52k2&dl=0", "", "Wyclef Jean", "Young Thug"],
         ["https://dl.dropbox.com/scl/fi/ktdmlx32039l83uquyvan/Floyd-Mayweather.mp3?rlkey=yao7ha1p1zn7ovyhev2i5p9hl&st=h9kzqrvt&dl=0", "", "Floyd Mayweather", "Young Thug, Travis Scott, Gucci Mane, Gunna"],
         ["https://dl.dropbox.com/scl/fi/v9xm41yzaqc43502zxkxd/Swizz-Beatz.mp3?rlkey=0g07i5k1hal0mkxeucoiaf4gh&st=wxmzdami&dl=0", "", "Swizz Beatz", "Young Thug"],
@@ -154,7 +190,7 @@ let all = [
         ["https://dl.dropbox.com/scl/fi/19q8tq0vxrvl9z7dtndks/Pick-Up-The-Phone.mp3?rlkey=4ql3f50ymh0o0dli3nxq9cpos&st=pc6vj8n8&dl=0", "", "Pick Up The Phone", "Young Thug, Travis Scott, Quavo"],
     ],
     [
-        ["No More Heroes, Vol. 1", "Hi-C", "2020", "Album", "./Images/Albums/No More Heroes V1.png", "rgb(189, 21, 21)"],
+        ["No More Heroes, Vol. 1", "Hi-C", "2020", "Album", "https://dl.dropbox.com/scl/fi/578frihnlzw6cun9i7x3z/_Cover.png?rlkey=1g7ov6h4ckpv1652nl6qgkdbp&st=8fz2643b&dl=0", "rgb(189, 21, 21)"],
         ["https://dl.dropbox.com/scl/fi/g4mm9veimhcpthbrlliks/01-No-More-Heroes-T1ll-Th3-3nD.mp3?rlkey=0bwq2sx9twhp8acs7k0o7ab8o&st=f449bqon&dl=0", "", "No More Heroes (Til The End)", "Hi-C"],
         ["https://dl.dropbox.com/scl/fi/6asdl5b8qviy754gejfcl/02-2s3at3r-keroro.mp3?rlkey=f6dro0vhuqj7412khp5h9rj6e&st=mpsc59n0&dl=0", "", "2 Seater (Keroro)", "Hi-C"],
         ["https://dl.dropbox.com/scl/fi/bq7cuh0ppw8i8574co85m/03-Psycho-feat.-yen5k-mp3.mp3?rlkey=wzvb6666gaxvd0yx97h5snoin&st=ijo14b4b&dl=0", "", "Psycho!", "Hi-C, Lil Yen"],
@@ -164,7 +200,7 @@ let all = [
         ["https://dl.dropbox.com/scl/fi/46xlcany4d8xurer3prj1/07-Mine4evrr.mp3?rlkey=vfd4a13dhvj0mu6sdp02ofm52&st=puq2xd30&dl=0", "", "Mine4evrr!", "Hi-C"],
     ],
     [
-        ["Grave House", "Sematary, Ghost Mountain", "2019", "Album", "./Images/Albums/Grave House.png", "rgb(122, 5, 17)"],
+        ["Grave House", "Sematary, Ghost Mountain", "2019", "Album", "https://dl.dropbox.com/scl/fi/yhwyjgz5mhyhnhq4gys36/Grave-House.png?rlkey=m3jposlicxjb2grg5nap60wsk&st=jt517h86&dl=0", "rgb(122, 5, 17)"],
         ["https://dl.dropbox.com/scl/fi/dwyg3f0wjf0kgjsye5mcg/Fury-Road.mp3?rlkey=hfp2twp2scmj293f6qwmo7au7&st=f35c8vx8&dl=0", "", "Fury Road", "Sematary, Ghost Mountain"],
         ["https://dl.dropbox.com/scl/fi/o8lpylk2r8vnwy1sukdbf/Nevada.mp3?rlkey=d56vgw0uv9dt6zmp9j37p9ieh&st=ru2esfl2&dl=0", "", "Nevada", "Sematary, Ghost Mountain"],
         ["https://dl.dropbox.com/scl/fi/v0t65fldwsjfdzxsi5yzs/Interstate.mp3?rlkey=wd4szjgzsmrech8abkc8xrk6s&st=q1qqutao&dl=0", "", "Interstate", "Sematary, Ghost Mountain"],
@@ -179,7 +215,7 @@ let all = [
         ["https://dl.dropbox.com/scl/fi/6yys8amydmkz1g80eckaw/Broken-Angel-Hospital.mp3?rlkey=8rkflwimj9yi4mdngn13jvkre&st=ynmuuxb5&dl=0", "", "Broken Angel Hospital", "Sematary, Ghost Mountain"],
     ],
     [
-        ["Hundred Acre Wrist", "Sematary, Ghost Mountain", "2020", "Album", "./Images/Albums/Hundred Acre Wrist.png", "rgb(42, 173, 21)"],
+        ["Hundred Acre Wrist", "Sematary, Ghost Mountain", "2020", "Album", "https://dl.dropbox.com/scl/fi/3qcf9qru8knooczbcz22i/Hundred-Acre-Wrist.png?rlkey=rrz60frcqm45czqhwaqh9wcf8&st=8fpplwlr&dl=0", "rgb(42, 173, 21)"],
         ["https://dl.dropbox.com/scl/fi/w6nduxgk0gsrdarjwt6q7/Heffalumps.mp3?rlkey=a5sk3ewmafbte932xq1nh9j3m&st=zf0s0zwv&dl=0", "", "Heffalumps", "Sematary, Ghost Mountain"],
         ["https://dl.dropbox.com/scl/fi/rt0611861niumj6gayfh6/Louisville-Slugger.mp3?rlkey=c4emrc6usuhlj09jhcq4mhv8q&st=2jsjrfor&dl=0", "", "Louisville Slugger", "Sematary, Ghost Mountain"],
         ["https://dl.dropbox.com/scl/fi/zltlq9g401rowx5sbi3s9/Tourniquet.mp3?rlkey=6i80660vkbz1qhj2px0j1szxw&st=h6xeglbs&dl=0", "", "Tourniquet", "Sematary, Ghost Mountain"],
@@ -192,7 +228,7 @@ let all = [
         ["https://dl.dropbox.com/scl/fi/hl6othzvx7vn0mbor6t7m/Cleaver-Valley.mp3?rlkey=ztp9xrt9wkual75f4e0a72lab&st=vebyqmii&dl=0", "", "Cleaver Valley", "Sematary, Ghost Mountain"],
     ],
     [
-        ["Warboy", "Sematary", "2020", "EP", "./Images/Albums/Warboy.png", "rgb(179, 52, 64)"],
+        ["Warboy", "Sematary", "2020", "EP", "https://dl.dropbox.com/scl/fi/2aqtq4rg3z9ridc5znmts/Warboy.png?rlkey=nki1nuvgftfptbrcmque29q2y&st=q1oh82jb&dl=0", "rgb(179, 52, 64)"],
         ["https://dl.dropbox.com/scl/fi/0ybd4c3ek1pko46iaac1l/10-000-Weeping-Choirs.mp3?rlkey=cmohkazdleia691grhdc0ifkn&st=k6nu8anh&dl=0", "", "10,000 Weeping Choirs", "Sematary"],
         ["https://dl.dropbox.com/scl/fi/705lfptbtnfhy1rndiac3/Hail-Mary.mp3?rlkey=tq5xihs48ury1gqttg7ttsfdc&st=yrdvm0l5&dl=0", "", "Hail Mary", "Sematary"],
         ["https://dl.dropbox.com/scl/fi/z3dtymcnig3ih5ojmec54/Redbull-Addict.mp3?rlkey=x87628sotjn5mclxde0lpx0pr&st=i2wyaczi&dl=0", "", "Redbull Addict", "Sematary"],
@@ -201,7 +237,7 @@ let all = [
         ["https://dl.dropbox.com/scl/fi/oasgcoth6fuhycrxf2u4d/Skulls.mp3?rlkey=8dyilrfq9nw9gbnd0rqm2byyx&st=yjgga2j5&dl=0", "", "Skulls", "Sematary"],
     ],
     [
-        ["Rainbow Bridge 3", "Sematary", "2021", "Album", "./Images/Albums/Rainbow Bridge 3.png", "rgb(189, 21, 21)"],
+        ["Rainbow Bridge 3", "Sematary", "2021", "Album", "https://dl.dropbox.com/scl/fi/gpm1etwiqvc9ef3qw689s/_Cover.png?rlkey=vppwmehvezs9nalpazvd3ju1p&st=o8n6k03s&dl=0", "rgb(189, 21, 21)"],
         ["https://dl.dropbox.com/scl/fi/0v6cczi7iqhk9t7zdbd70/God-s-Light-Burns-Upon-My-Flesh.mp3?rlkey=h031odnnirvxfldjsrp84i5ng&st=hgif3675&dl=0", "", "God's Light Burns Upon My Flesh", "Sematary"],
         ["https://dl.dropbox.com/scl/fi/88s62udntkzwtzqd5hxhj/Murder-Ride.mp3?rlkey=894204zn6vmvxmtyvfh24bpew&st=xzy6wjiw&dl=0", "", "Murder Ride", "Sematary"],
         ["https://dl.dropbox.com/scl/fi/qbgiu6avv5nyswjppwqk9/Chainsaw-Party.mp3?rlkey=r2ch1tqcl4neb2dj5ojgy7hhp&st=7zkquytc&dl=0", "", "Chainsaw Party", "Sematary"],
@@ -221,7 +257,7 @@ let all = [
         
     ],
     [
-        ["Butcher House", "Sematary", "2023", "Album", "./Images/Albums/Butcher House.png", "rgb(189, 21, 21)"],
+        ["Butcher House", "Sematary", "2023", "Album", "https://dl.dropbox.com/scl/fi/f8zay5znvsyehxe91mh29/_cover.png?rlkey=xus0yucqlgapcwadh5tqqscf3&st=iz756ij1&dl=0", "rgb(189, 21, 21)"],
         ["https://dl.dropbox.com/scl/fi/k985gdqpmet0v9dnnb7ob/01.-Haunted-Mound-Reapers-feat.-Hackle.mp3?rlkey=oiaggn8izviv7m2zs27sg5kdz&st=cd4akgts&dl=0", "", "Haunted Mound Reapers", "Sematary, Hackle"],
         ["https://dl.dropbox.com/scl/fi/8psbbla6g7rfueh5tn8an/02.-Babayaga.mp3?rlkey=bb8so45wddj071dxpffm3bzrn&st=vkvdovxm&dl=0", "", "Babayaga", "Sematary"],
         ["https://dl.dropbox.com/scl/fi/qu808lyrk5lp69werjliy/03.-In-Tha-Field-Where-I-Found-U.mp3?rlkey=st66lsex4ahpn3uljp0hlyf4b&st=owgkduu2&dl=0", "", "In Tha Field Where I Found U", "Sematary"],
@@ -233,14 +269,14 @@ let all = [
         ["https://dl.dropbox.com/scl/fi/xdszykava2m9bn7vdhvi1/08.-We-Don-t-Dial-911.mp3?rlkey=10ksarv4sxgfnz94cnpcmujgr&st=mnnjdtg2&dl=0", "", "Angelmakers", "Sematary, Turnabout"],
         ["https://dl.dropbox.com/scl/fi/a9egkivor9px7kgjv6wy7/10.-Burn-A-Cop-Car.mp3?rlkey=7aa98suhi35f9e7mcuon1w5zn&st=aumjniak&dl=0", "", "Burn A Cop Car", "Sematary"],
         ["https://dl.dropbox.com/scl/fi/ix25az7tcitl2e5rmebk1/11.-Go-Dig-My-Grave.mp3?rlkey=n7gpv55qa2zx8uoai7lt6aw9p&st=9dzsajma&dl=0", "", "Go Dig My Grave", "Sematary"],
-        ["https://dl.dropbox.com/scl/fi/ix25az7tcitl2e5rmebk1/11.-Go-Dig-My-Grave.mp3?rlkey=n7gpv55qa2zx8uoai7lt6aw9p&st=9dzsajma&dl=0", "", "Little Lamb", "Sematary"],
+        ["https://dl.dropbox.com/scl/fi/8zp1oy875podx722qeq94/12.-Little-Lamb.mp3?rlkey=7ma1kwsx9vdu7m1xhnfpt3f3v&st=0b5kabvi&dl=0", "", "Little Lamb", "Sematary"],
     ],
     [
-        ["Still Da Same", "Sematary, xaviersobased", "2025", "Single", "./Images/Albums/Still Da Same.png", "rgb(80, 59, 163)"],
+        ["Still Da Same", "Sematary, xaviersobased", "2025", "Single", "https://dl.dropbox.com/scl/fi/iiw7kfbwy3mdex8rmbkdt/Still-Da-Same.png?rlkey=rshi30dxaztcv80g8jjvxj8dx&st=u2xt1wtg&dl=0", "rgb(80, 59, 163)"],
         ["https://dl.dropbox.com/scl/fi/xxjslxawyklhmromv1re4/Still-Da-Same.mp3?rlkey=12ueinicuxw798l2epho4airm&st=4jghs0q5&dl=0", "", "Still Da Same", "Sematary, xaviersobased"],
     ],
     [
-        ["Gluee", "Bladee", "2014", "Album", "./Images/Albums/Gluee.png", "rgb(152, 82, 217)"],
+        ["Gluee", "Bladee", "2014", "Album", "https://dl.dropbox.com/scl/fi/hj9boqzwpv2qahbd90147/Gluee.png?rlkey=wozyvrpdq4h604axiylyt40r4&st=trvi3efz&dl=0", "rgb(152, 82, 217)"],
         ["https://dl.dropbox.com/scl/fi/4hat7zqyms15k9x3iy658/01.-Deletee-Intro.mp3?rlkey=obicm7k5tzyl2ng1o5kocmdcn&st=7bd5q33n&dl=0", "", "Deletee (Intro)", "Bladee, Thaiboy Digital"],
         ["https://dl.dropbox.com/scl/fi/08co0xhrvh80a83wxn8h1/02.-Safehouse.mp3?rlkey=qsw16g0p7zsskxmxurq539r54&st=dsljs1zn&dl=0", "", "Safehouse", "Bladee"],
         ["https://dl.dropbox.com/scl/fi/g0oertvtabf580wlnh6av/03.-Ebay-feat.-Ecco2k-Thaiboy-Digital.mp3?rlkey=8qiwntgvzyez3pv7ve5zkyl62&st=y61dp5r8&dl=0", "", "Ebay", "Bladee, Thaiboy Digital, Ecco2k"],
@@ -252,7 +288,7 @@ let all = [
         ["https://dl.dropbox.com/scl/fi/nenlm6g3aoybjfkfg4jlm/09.-Unreal.mp3?rlkey=a9k56omlk95ar48ukxggtzzjb&st=xjoh7xlp&dl=0", "", "Unreal", "Bladee"],
     ],
     [
-        ["Working On Dying", "Bladee", "2017", "Album", "./Images/Albums/Working On Dying.png", "rgb(105, 31, 18)"],
+        ["Working On Dying", "Bladee", "2017", "Album", "https://dl.dropbox.com/scl/fi/rghzi9lbu36olv2t6f9hy/Working-On-Dying.png?rlkey=zt7rp4ln1u1687vwn0qpewkir&st=5mkw8x8o&dl=0", "rgb(105, 31, 18)"],
         ["https://dl.dropbox.com/scl/fi/f0fhant40rk955y8zo02c/Redlight-Moments.mp3?rlkey=rnm9tf0gpdleqxdu247qftrpp&st=plbndcm5&dl=0", "", "Redlight Moments", "Bladee"],
         ["https://dl.dropbox.com/scl/fi/civc57qwttr5g8hrtqjh3/Lordship.mp3?rlkey=guapyq6lfniwfxnsfx087tm4d&st=cxbc0ktp&dl=0", "", "Lordship", "Bladee, Yung Lean"],
         ["https://dl.dropbox.com/scl/fi/7hqy7kgg2v6lq4cknlev9/Knightsbridge.mp3?rlkey=a7uiffpzky5gdsyew94u59bzr&st=chto2cmj&dl=0", "", "Knightsbridge", "Bladee"],
@@ -264,7 +300,7 @@ let all = [
         ["https://dl.dropbox.com/scl/fi/hz62uwzy2nf7oa9gdgwu6/Best-Buy.mp3?rlkey=0fb9molbzin8hhkyb4ipx1wj4&st=hfvfgqv8&dl=0", "", "Best Buy", "Bladee"],
     ],
     [
-        ["EVOL", "Future", "2016", "Album", "./Images/Albums/Evol.png", "rgb(49, 55, 66)"],
+        ["EVOL", "Future", "2016", "Album", "https://dl.dropbox.com/scl/fi/q2766cm1g80owz62j1m2m/_cover.png?rlkey=m1n59m43711ikq9nqm78ehm36&st=0j3mbg4w&dl=0", "rgb(49, 55, 66)"],
         ["https://dl.dropbox.com/scl/fi/3v9aojse12a23i7e4s9v9/Ain-t-No-Time.mp3?rlkey=n4lnqdlg0xex1itj8whwvvl9u&st=iw1bfkcm&dl=0", "", "Ain't No Time", "Future"],
         ["https://dl.dropbox.com/scl/fi/ekv4hgjqtdf0d0ez6sluw/In-Her-Mouth.mp3?rlkey=c9mo5no8x67ve4bkfn59vsj0l&st=agp4ohki&dl=0", "", "In Her Mouth", "Future"],
         ["https://dl.dropbox.com/scl/fi/ltt160vogwfyzad5cntf6/Maybach.mp3?rlkey=i0hcz9ut3uiwg4buwfp2kq10e&st=5pvglg8m&dl=0", "", "Maybach", "Future"],
@@ -413,15 +449,27 @@ function updateCurrentSongs(){ //Updates the list of songs
             })
         }
 
+        let isLiked = all[0].some(row => row[0] == list[i][0])
+
         const createdLike = document.createElement("img")
         createdLike.classList.add("song-like")
         createdLike.src = "./Images/Icons/Save.png"
         songContainer.appendChild(createdLike)
 
-        if (all[0].some(row => row.includes(list[i][0]))){ //Checks if it is liked
+        songContainer.addEventListener("mouseover", function() {
+            createdLike.style.display = "block"
+        })
+        songContainer.addEventListener("mouseleave", function(){
+            if (!isLiked){
+                createdLike.style.display = "none"
+            }
+        })
+
+        if (isLiked){
             createdLike.src = "./Images/Icons/Saved.png"
         } else {
             createdLike.src = "./Images/Icons/Save.png"
+            createdLike.style.display = "none"
         }
 
         songFeature.addEventListener("click", function(event){ //Takes the user to search for the artist on click
@@ -431,12 +479,6 @@ function updateCurrentSongs(){ //Updates the list of songs
 
         createdLike.addEventListener("click", function(event){ //Likes and unlikes the song
             event.stopPropagation()
-        
-            const isLiked = all[0].some(row => row[0] == list[i][0])
-
-            if (playing == all[0]){
-                clearQueues()
-            }
         
             if (!isLiked) {
                 createdLike.src = "./Images/Icons/Saved.png"
@@ -454,6 +496,15 @@ function updateCurrentSongs(){ //Updates the list of songs
             } else {
                 createdLike.src = "./Images/Icons/Save.png"
                 const removed = all[0].findIndex(row => row[0] == list[i][0])
+
+                if (playing == all[0]){
+                    for (let i = 0; i < queue.length - 1; i++){
+                        if (queue[i][0] == all[0][removed][0]){
+                            queue.splice(i, 1)
+                        }
+                    }
+                }
+
                 all[0].splice(removed, 1)
             }
 
@@ -468,6 +519,8 @@ function updateCurrentSongs(){ //Updates the list of songs
             }
 
             addTrackPosition(all[0])
+            
+            isLiked = all[0].some(row => row[0] == list[i][0])
         })
 
         createdSong.appendChild(songContainer)
@@ -723,7 +776,7 @@ function clearQueues(){ //Clears the queue and stack
 }
 
 function addTrackPosition(array){ //Adds track positions so it knows the position when shuffling
-    for (i = 1; i < array.length; i++){
+    for (let i = 1; i < array.length; i++){
         if (isNaN(array[i][array[i].length - 1])){
             array[i].push(i)
         } else {
@@ -785,6 +838,14 @@ function searchEntered(){ //Checks when you press enter while searching
         "Playlist": "playlists",
     }
 
+    const sections = searching.querySelectorAll("div")
+    sections.forEach(section => {
+        const images = section.querySelectorAll("img")
+        images.forEach(img => {
+            section.removeChild(img)
+        })
+    })
+
     if (initital.trim()){
         searching.style.display = "block"
         for (let i = 0; i < all.length; i++){
@@ -819,7 +880,6 @@ function searchEntered(){ //Checks when you press enter while searching
                     }
                 }
             } else {
-                const sections = searching.querySelectorAll("div")
                 sections.forEach(section => {
                     const images = section.querySelectorAll("img")
                     images.forEach(img => {
