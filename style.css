@@ -19,26 +19,30 @@ body{
     background-color: rgb(10, 10, 10);
     position: absolute;
     height: 30px;
-    width: 750px;
+    width: 40%;
     border: none;
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
     color: rgb(255, 255, 255);
+    border-radius: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #signout{
-    background-color: rgb(10, 10, 10);
     position: absolute;
     right: 0;
     margin-right: 25px;
     height: 30px;
-    width: 150px;
-    font-size: 1.25em;
-    border: none;
-    font-weight: bold;
-    color: rgb(150, 150, 150);
+    width: auto;
     cursor: pointer;
+    filter: brightness(75%);
+}
+
+#signout:hover{
+    filter: brightness(100%);
 }
 
 #player{
@@ -107,7 +111,7 @@ body{
 #container{
     flex: 1;
     margin-left: 200px;
-    margin-bottom: 100px;
+    margin-bottom: 85px;
     overflow-y: auto;
 }
 
@@ -205,12 +209,12 @@ ol{
     display: flex;
     align-items: center;
     padding-right: 25px;
-    height: 65px;
+    height: 55px;
 }
 
 .song-num{
     position: absolute;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: rgb(255, 255, 255);
     white-space: nowrap;
     overflow: hidden;
@@ -219,22 +223,26 @@ ol{
 .song-name{
     position: absolute;
     padding-left: 115px;
-    margin-bottom: 40px;
-    font-size: 1.3em;
+    margin-bottom: 35px;
+    font-size: 1.1em;
     color: rgb(255, 255, 255);
+
     white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .song-feature{
     position: absolute;
     padding-left: 115px;
-    margin-top: 45px;
-    font-size: 1.2em;
+    margin-top: 40px;
+    font-size: 1em;
     color: rgb(180, 180, 180);
+    cursor: pointer;
+
     white-space: nowrap;
     overflow: hidden;
-    cursor: pointer;
+    text-overflow: ellipsis;
 }
 
 .song-feature:hover{
@@ -244,12 +252,14 @@ ol{
 
 .song-album{
     position: absolute;
-    margin-left: 40%;
-    font-size: 1.2em;
+    left: 1000px;
+    font-size: 1.1em;
     color: rgb(180, 180, 180);
+    cursor: pointer;
+
     white-space: nowrap;
     overflow: hidden;
-    cursor: pointer;
+    text-overflow: ellipsis;
 }
 
 .song-album:hover{
@@ -259,9 +269,14 @@ ol{
 
 .song-like{
     position: absolute;
-    width: 40px;
-    height: 40px;
-    right: 15%;
+    width: 25px;
+    height: 25px;
+    right: 100px;
+    filter: brightness(75%);
+}
+
+.song-like:hover{
+    filter: brightness(100%);
 }
 
 #album-image{
@@ -277,8 +292,10 @@ ol{
     color: rgb(255, 255, 255);
     margin: 0;
     padding-bottom: 10px;
+
     white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #album-desc{
@@ -286,8 +303,10 @@ ol{
     color: rgb(200, 200, 200);
     margin: 0;
     padding-bottom: 5px;
+
     white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #save{
