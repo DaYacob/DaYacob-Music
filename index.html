@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>DaYacob Music</title>
+        <title>Project</title>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-16">
@@ -32,7 +32,7 @@
                     <img onclick="skipCurrentSong()" src="./Images/Icons/Skip.png" id="skip">
                     <img onclick="enableRepeat()" src="./Images/Icons/Repeat.png" id="repeat">
                 </div>
-                <input type="range" id="progress" min="0" max="1000" value="0">
+                <input type="range" id="progress" min="0" max="1000" value="0" step="0.01">
             </div>
 
             <div id="right">
@@ -45,7 +45,7 @@
 
         <div id="top"> 
             <input id="search-bar" placeholder="What do you want to play?" spellcheck = "false">
-            <button id="signout" type="button" onclick="signout()">Signout</button><br><br>
+            <img id="signout" onclick="signout()" src="./Images/Icons/Logout.png">
         </div>
 
         <div id="container">
