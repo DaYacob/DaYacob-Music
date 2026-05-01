@@ -141,6 +141,11 @@ body{
     justify-content: center;
 }
 
+#song-liked{
+    height: 25px;
+    width: 25px;
+}
+
 #song-name{
     margin: 0;
     font-size: 1.25em;
